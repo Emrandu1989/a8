@@ -36,7 +36,7 @@ const ListedBooks = () => {
 	
 </div>
           
-         <div className="ml-20 mt-5">
+         <div className="lg:ml-20 mt-5">
          <Outlet />
          </div>
         </>

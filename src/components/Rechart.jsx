@@ -17,8 +17,9 @@ const Rechart = ({ readList }) => {
     }));
 
     return (
-        <BarChart
-            width={1000}
+       <div className=''>
+         <BarChart
+            width={700}
             height={600}
             data={booksData}
             margin={{ top: 10, right: 0, left: 0, bottom: 0 }}
@@ -30,6 +31,7 @@ const Rechart = ({ readList }) => {
             <Legend />
             <Bar dataKey="totalPages" fill="#8884d8" shape={<TriangleBar />} />
         </BarChart>
+       </div>
     );
 };
 

@@ -55,7 +55,7 @@ const BookDetails = () => {
         <>
             <div className="hero min-h-screen bg-base-200">
                 <div className="hero-content flex-col lg:flex-row">
-                    <div className='w-1/2 min-h-[700px] rounded-xl bg-slate-300 px-16 flex justify-center items-center mx-12'>
+                    <div className='lg:w-1/2 min-h-[700px] rounded-xl bg-slate-300 px-12 lg:px-16 flex justify-center items-center lg:mx-12'>
                         <img src={image} className="max-w-lg h-[500px] rounded-lg shadow-2xl" alt={bookName} />
                     </div>
                     <div>

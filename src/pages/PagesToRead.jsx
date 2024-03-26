@@ -26,7 +26,7 @@ const PagesToRead = () => {
      
     return (
         <>         
-             <div className='mt-12 ml-12'>
+             <div className='mt-12 lg:ml-12'>
                   <Rechart readList={readList}/>
                
                  </div>     

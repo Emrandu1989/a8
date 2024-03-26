@@ -7,7 +7,7 @@ const WishBookCard = ({item}) => {
     const { author, bookName, image,bookId, publisher, rating, review, category, tags, totalPages, yearOfPublishing } = item;
     return (
         <>
-            <div className="card mb-5 card-side bg-base-100 border-2 pl-9 py-5 shadow-xl">
+            <div className="card mb-5 flex flex-col lg:flex-row card-side bg-base-100 border-2 lg:pl-9 py-5  shadow-xl">
   <figure><img className="w-[300px]" src={image} alt="Movie"/></figure>
   <div className="card-body">
     <h2 className="card-title">{bookName}</h2>
@@ -19,26 +19,26 @@ const WishBookCard = ({item}) => {
        <span>Year of publishing:{yearOfPublishing} </span>
       </p>
     </div>
-    <div className='flex'>
-        <p className='flex items-center gap-2'>
+    <div className='flex justify-center flex-col lg:flex-row lg:items-center'>
+        <p className='flex items-center  gap-2'>
         <HiUsers />
         <span>Publisher:{publisher} </span>
         </p>
-        <p className='flex items-center gap-2'>
+        <p className='flex lg:flex-row items-center mr-24 gap-2'>
         <IoSearchCircle />
           <span> page: {totalPages}</span>
         </p>
     </div>
     <hr />
-    <div className='space-x-12'>
+    <div className='lg:space-x-12 flex flex-col  lg:flex-row gap-4'>
       <button className="btn btn-outline">Category : {category} </button>
       <button className="btn ">Rating : {rating} </button>
-     <Link to={`/book/${bookId}`}>
-     <button className="btn  btn-active btn-accent"> View Details </button>
-     </Link>
+      <Link to={`/book/${bookId}`}>
+      <button className="btn w-full  btn-active btn-accent"> View Details </button>
+      </Link>
     </div>
   </div>
-</div>        
+</div>           
         </>
     );
 };
