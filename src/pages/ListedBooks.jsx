@@ -2,11 +2,12 @@ import { useState } from "react";
 import { Link, Outlet } from "react-router-dom";
 
 
+
 const ListedBooks = () => {
     const  [tabIndex, setTabIndex] = useState(0)
     return (
         <>
-             <h2 className="my-12">This is Listed Books Page</h2>
+             
 
 
              {/* tabs */}

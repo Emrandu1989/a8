@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
 import WishBookCard from './WishBookCard';
 
@@ -19,7 +19,7 @@ const WishList = () => {
        console.log(wishList)
     return (
         <div>
-            <h2>This is WishList</h2>
+          
             <div>
                 {
                     wishList.map(item => <WishBookCard
