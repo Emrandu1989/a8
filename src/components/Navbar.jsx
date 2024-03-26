@@ -22,16 +22,16 @@ const Navbar = () => {
         
       </ul>
     </div>
-    <a className="btn btn-ghost text-2xl font-bold">Books <span className="text-gray-500">Arena</span> </a>
+    <a className="btn btn-ghost -ml-5 text-xl -mr-12 lg:text-2xl font-bold">Books <span className="text-gray-500">Arena</span> </a>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
          {links}
     </ul>
   </div>
-  <div className="navbar-end">
-    <a className="btn btn-success mr-5">SignIn</a>
-    <a className="btn btn-outline">SignUp</a>
+  <div className="navbar-end ml-20 flex  gap-2 ">
+    <a className="btn w-12 lg:w-24  btn-success lg:mr-5">SignIn</a>
+    <a className="btn  w-12 lg:w-24  btn-outline">SignUp</a>
   </div>
 </div>   
         </>
