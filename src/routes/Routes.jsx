@@ -31,13 +31,13 @@ export const router = createBrowserRouter([
       {
         path: "/pagesToRead",
         element: <PagesToRead />,
-        loader: () => fetch(`../../public/books.json`),
+        loader: () => fetch(`./books.json`),
       },
 
       {
         path: "/book/:bookId",
         element: <BookDetails />,
-        loader: () => fetch(`../../public/books.json`),
+        loader: () => fetch(`./books.json`),
       },
       {
         path: "/listedBooks",
@@ -46,12 +46,12 @@ export const router = createBrowserRouter([
           {
             path: "readList",
             element: <ReadList />,
-            loader: () => fetch(`../../public/books.json`),
+            loader: () => fetch(`./books.json`),
           },
           {
             path: "wishList",
             element: <WishList />,
-            loader: () => fetch(`../../public/books.json`),
+            loader: () => fetch(`./books.json`),
           },
         ],
       },
