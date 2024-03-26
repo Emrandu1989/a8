@@ -35,7 +35,9 @@ const ListedBooks = () => {
 	
 </div>
           
-      <Outlet />
+         <div className="ml-20 mt-5">
+         <Outlet />
+         </div>
         </>
     );
 };
