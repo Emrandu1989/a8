@@ -26,7 +26,7 @@ const PagesToRead = () => {
      
     return (
         <>         
-             <div className='mt-12 lg:ml-12'>
+             <div className='mt-12 lg:mr-24  lg:flex justify-center items-center'>
                   <Rechart readList={readList}/>
                
                  </div>     

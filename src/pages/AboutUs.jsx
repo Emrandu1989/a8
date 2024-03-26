@@ -3,7 +3,7 @@ import img2 from '../assets/pexels-photo-13061424.jpeg';
 import img3 from '../assets/pexels-photo-5554240.jpeg';
 import img4 from '../assets/pexels-photo-6214649.webp';
 import img5 from '../assets/pexels-photo-9572636.jpeg';
-import img6 from '../assets/banner.jpg';
+
 
 
 const AboutUs = () => {
