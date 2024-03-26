@@ -1,9 +1,10 @@
 import { IoLocationSharp, IoSearchCircle  } from "react-icons/io5";
 import { HiUsers } from "react-icons/hi2";
+import { Link } from "react-router-dom";
 
 const ReadBookCard = ({item}) => {
 
-    const { author, bookName, image, publisher, rating, review, category, tags, totalPages, yearOfPublishing } = item;
+    const { author, bookName, image,bookId, publisher, rating, review, category, tags, totalPages, yearOfPublishing } = item;
        
     return (
         <>
@@ -33,7 +34,9 @@ const ReadBookCard = ({item}) => {
     <div className='space-x-12'>
       <button className="btn btn-outline">Category : {category} </button>
       <button className="btn ">Rating : {rating} </button>
+      <Link to={`/book/${bookId}`}>
       <button className="btn  btn-active btn-accent"> View Details </button>
+      </Link>
     </div>
   </div>
 </div>     

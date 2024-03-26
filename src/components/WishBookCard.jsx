@@ -1,9 +1,10 @@
 import React from 'react';
 import { IoLocationSharp, IoSearchCircle  } from "react-icons/io5";
 import { HiUsers } from "react-icons/hi2";
+import { Link } from 'react-router-dom';
 
 const WishBookCard = ({item}) => {
-    const { author, bookName, image, publisher, rating, review, category, tags, totalPages, yearOfPublishing } = item;
+    const { author, bookName, image,bookId, publisher, rating, review, category, tags, totalPages, yearOfPublishing } = item;
     return (
         <>
             <div className="card mb-5 card-side bg-base-100 border-2 pl-9 py-5 shadow-xl">
@@ -32,7 +33,9 @@ const WishBookCard = ({item}) => {
     <div className='space-x-12'>
       <button className="btn btn-outline">Category : {category} </button>
       <button className="btn ">Rating : {rating} </button>
-      <button className="btn  btn-active btn-accent"> View Details </button>
+     <Link to={`/book/${bookId}`}>
+     <button className="btn  btn-active btn-accent"> View Details </button>
+     </Link>
     </div>
   </div>
 </div>        
