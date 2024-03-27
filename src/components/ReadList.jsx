@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useLoaderData } from "react-router-dom";
-import ReadBookCard from "../components/ReadBookCard";
+import ReadBookCard from "./ReadBookCard";
 
 const ReadList = () => {
   const books = useLoaderData();
