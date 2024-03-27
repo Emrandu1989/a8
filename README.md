@@ -2,7 +2,7 @@
 
 Welcome to Books Arena, your go-to platform for exploring, managing, and discovering new books!
 
-**Live Site URL:** [Books Arena Live](https://www.booksarena.com)
+**Live Site URL:** [Books Arena Live](https://cute-florentine-5a3f57.netlify.app/)
 
 ## Features and Characteristics
 

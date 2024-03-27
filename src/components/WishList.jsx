@@ -6,12 +6,14 @@ const WishList = () => {
     const books = useLoaderData();
     console.log(books)
     const [wishlistBooks, setWishlistBooks] = useState([]);
+    const [loading, setLoading] = useState(true)
     useEffect(() => {
-        
+        setLoading(true)
         const storedWishlistBooks = localStorage.getItem('wishlistBooks');
        
         if (storedWishlistBooks) {
             setWishlistBooks(JSON.parse(storedWishlistBooks));
+            setLoading(false)
         }
     }, []);
 
@@ -25,6 +27,7 @@ const WishList = () => {
                     wishList.map(item => <WishBookCard
                     key={item.bookId}
                     item={item}
+                    loading={loading}
                     /> )
                 }
             </div>

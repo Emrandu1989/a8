@@ -2,9 +2,14 @@ import React from 'react';
 import { IoLocationSharp, IoSearchCircle  } from "react-icons/io5";
 import { HiUsers } from "react-icons/hi2";
 import { Link } from 'react-router-dom';
+import LoadingSpinner from './LoadingSpinner';
 
-const WishBookCard = ({item}) => {
+const WishBookCard = ({item,loading}) => {
     const { author, bookName, image,bookId, publisher, rating, review, category, tags, totalPages, yearOfPublishing } = item;
+     
+    if(loading){
+        return <LoadingSpinner/>
+    }
     return (
         <>
             <div className="card mb-5 flex flex-col lg:flex-row card-side bg-base-100 border-2 lg:pl-9 py-5  shadow-xl">
